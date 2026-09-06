@@ -9,7 +9,7 @@ document.querySelector('#app').innerHTML = `
       <nav class="flex items-center gap-8 text-sm text-zinc-300" aria-label="Primary navigation">
         <a class="transition hover:text-white" href="#work">Work</a>
         <a class="transition hover:text-white" href="#about">About</a>
-        <a class="transition hover:text-white" href="mailto:hello@anthony.dev">Contact</a>
+        <a class="transition hover:text-white" href="mailto:anthony197542@gmail.com">Contact</a>
       </nav>
     </div>
   </header>
