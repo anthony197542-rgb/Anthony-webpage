@@ -83,8 +83,8 @@ document.querySelector('#app').innerHTML = `
       <h2 class="mt-6 font-display text-5xl font-medium leading-[0.95] text-white sm:text-6xl">
         Let&rsquo;s make something useful.
       </h2>
-      <a class="mt-10 inline-flex items-center gap-3 border-b border-white pb-2 text-base font-semibold text-white transition hover:border-amber-300 hover:text-amber-300" href="mailto:hello@anthony.dev">
-        hello@anthony.dev <span aria-hidden="true">↗</span>
+      <a class="mt-10 inline-flex items-center gap-2 rounded-full bg-amber-300 px-8 py-3 text-base font-semibold text-zinc-950 transition hover:bg-amber-200" href="mailto:anthony197542@gmail.com?subject=Website%20inquiry">
+        Get your webpage built <span aria-hidden="true">↗</span>
       </a>
     </section>
   </main>
