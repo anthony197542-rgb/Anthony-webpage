@@ -9,7 +9,7 @@ document.querySelector('#app').innerHTML = `
       <nav class="flex items-center gap-8 text-sm text-zinc-300" aria-label="Primary navigation">
         <a class="transition hover:text-white" href="#work">Work</a>
         <a class="transition hover:text-white" href="#about">About</a>
-        <a class="transition hover:text-white" href="https://mail.google.com/mail/?view=cm&fs=1&to=anthony197542@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a>
+        <a class="transition hover:text-white" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -78,14 +78,30 @@ document.querySelector('#app').innerHTML = `
       </div>
     </section>
 
-    <section class="border-t border-white/10 py-28">
+    <section class="border-t border-white/10 py-28" id="contact" aria-labelledby="contact-title">
       <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300">Have a worthy problem?</p>
-      <h2 class="mt-6 font-display text-5xl font-medium leading-[0.95] text-white sm:text-6xl">
+      <h2 id="contact-title" class="mt-6 font-display text-5xl font-medium leading-[0.95] text-white sm:text-6xl">
         Let&rsquo;s make something useful.
       </h2>
-      <a class="mt-10 inline-flex items-center gap-2 rounded-full bg-amber-300 px-8 py-3 text-base font-semibold text-zinc-950 shadow-lg shadow-amber-300/20 transition duration-150 hover:bg-amber-200 hover:shadow-amber-300/30 active:scale-95 active:bg-amber-400 active:shadow-none" href="https://mail.google.com/mail/?view=cm&fs=1&to=anthony197542@gmail.com&su=Website%20inquiry" target="_blank" rel="noopener noreferrer">
-        Get your webpage built <span aria-hidden="true">↗</span>
-      </a>
+      <p class="mt-6 max-w-md text-zinc-400">Tell me a bit about your project and I&rsquo;ll get back to you.</p>
+      <form id="contact-form" class="mt-10 grid max-w-lg gap-5">
+        <div>
+          <label for="contact-name" class="text-xs font-semibold uppercase tracking-widest text-zinc-500">Name</label>
+          <input id="contact-name" name="name" type="text" required class="mt-2 w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-white placeholder-zinc-500 outline-none transition focus:border-amber-300" placeholder="Your name" />
+        </div>
+        <div>
+          <label for="contact-email" class="text-xs font-semibold uppercase tracking-widest text-zinc-500">Email</label>
+          <input id="contact-email" name="email" type="email" required class="mt-2 w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-white placeholder-zinc-500 outline-none transition focus:border-amber-300" placeholder="you@example.com" />
+        </div>
+        <div>
+          <label for="contact-message" class="text-xs font-semibold uppercase tracking-widest text-zinc-500">Message</label>
+          <textarea id="contact-message" name="message" rows="5" required class="mt-2 w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-white placeholder-zinc-500 outline-none transition focus:border-amber-300" placeholder="Tell me about your project"></textarea>
+        </div>
+        <button type="submit" class="mt-2 inline-flex w-fit items-center gap-2 rounded-full bg-amber-300 px-8 py-3 text-base font-semibold text-zinc-950 shadow-lg shadow-amber-300/20 transition duration-150 hover:bg-amber-200 hover:shadow-amber-300/30 active:scale-95 active:bg-amber-400 active:shadow-none">
+          Send message <span aria-hidden="true">↗</span>
+        </button>
+        <p id="contact-status" class="text-sm text-zinc-500"></p>
+      </form>
     </section>
   </main>
 
@@ -95,3 +111,21 @@ document.querySelector('#app').innerHTML = `
     <a class="text-zinc-300 transition hover:text-white" href="#top">Back to top ↑</a>
   </footer>
 `
+
+const contactForm = document.querySelector('#contact-form')
+const contactStatus = document.querySelector('#contact-status')
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault()
+
+  const name = contactForm.name.value.trim()
+  const email = contactForm.email.value.trim()
+  const message = contactForm.message.value.trim()
+
+  const subject = `Website inquiry from ${name}`
+  const body = `${message}\n\n— ${name} (${email})`
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=anthony197542@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+
+  window.open(gmailUrl, '_blank', 'noopener,noreferrer')
+  contactStatus.textContent = 'Opening Gmail with your message ready to send…'
+})
