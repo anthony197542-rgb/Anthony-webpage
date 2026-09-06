@@ -31,8 +31,8 @@ document.querySelector('#app').innerHTML = `
 
     <section class="border-t border-white/10 py-24" id="about">
       <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300">About</p>
-      <p class="mt-6 max-w-2xl font-display text-3xl font-light leading-tight text-white sm:text-4xl">
-        I spent 10 years as a plumber before deciding to work for myself &mdash; building websites instead of pipes.
+      <p class="mt-6 max-w-2xl text-xl leading-relaxed text-zinc-300 sm:text-2xl">
+        After a decade as a professional plumber, I traded copper and wrenches for clean code and modern web design. The tools changed, but the core principle stayed the exact same: build solid infrastructure that doesn&rsquo;t leak, breaks down, or let the customer down.
       </p>
       <div class="mt-14 grid gap-10 sm:grid-cols-3">
         <article class="border-t border-white/15 pt-6">
