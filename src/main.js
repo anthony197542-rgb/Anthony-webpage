@@ -9,7 +9,7 @@ document.querySelector('#app').innerHTML = `
       <nav class="flex items-center gap-8 text-sm text-zinc-300" aria-label="Primary navigation">
         <a class="transition hover:text-white" href="#work">Work</a>
         <a class="transition hover:text-white" href="#about">About</a>
-        <a class="transition hover:text-white" href="mailto:anthony197542@gmail.com">Contact</a>
+        <a class="transition hover:text-white" href="https://mail.google.com/mail/?view=cm&fs=1&to=anthony197542@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a>
       </nav>
     </div>
   </header>
@@ -83,7 +83,7 @@ document.querySelector('#app').innerHTML = `
       <h2 class="mt-6 font-display text-5xl font-medium leading-[0.95] text-white sm:text-6xl">
         Let&rsquo;s make something useful.
       </h2>
-      <a class="mt-10 inline-flex items-center gap-2 rounded-full bg-amber-300 px-8 py-3 text-base font-semibold text-zinc-950 shadow-lg shadow-amber-300/20 transition duration-150 hover:bg-amber-200 hover:shadow-amber-300/30 active:scale-95 active:bg-amber-400 active:shadow-none" href="mailto:anthony197542@gmail.com?subject=Website%20inquiry">
+      <a class="mt-10 inline-flex items-center gap-2 rounded-full bg-amber-300 px-8 py-3 text-base font-semibold text-zinc-950 shadow-lg shadow-amber-300/20 transition duration-150 hover:bg-amber-200 hover:shadow-amber-300/30 active:scale-95 active:bg-amber-400 active:shadow-none" href="https://mail.google.com/mail/?view=cm&fs=1&to=anthony197542@gmail.com&su=Website%20inquiry" target="_blank" rel="noopener noreferrer">
         Get your webpage built <span aria-hidden="true">↗</span>
       </a>
     </section>
