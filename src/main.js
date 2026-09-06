@@ -30,25 +30,25 @@ document.querySelector('#app').innerHTML = `
     </section>
 
     <section class="border-t border-white/10 py-24" id="about">
-      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300">How I work</p>
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300">About</p>
       <p class="mt-6 max-w-2xl font-display text-3xl font-light leading-tight text-white sm:text-4xl">
-        The best engineering feels inevitable: precise in the details, calm under pressure, and straightforward for the people relying on it.
+        I spent 10 years as a plumber before deciding to work for myself &mdash; building websites instead of pipes.
       </p>
       <div class="mt-14 grid gap-10 sm:grid-cols-3">
         <article class="border-t border-white/15 pt-6">
           <span class="text-xs font-semibold text-amber-300">01</span>
-          <h2 class="mt-4 font-display text-xl font-medium text-white">Think in systems</h2>
-          <p class="mt-2 text-sm leading-relaxed text-zinc-400">Every decision earns its place in the larger picture.</p>
+          <h2 class="mt-4 font-display text-xl font-medium text-white">Built on experience</h2>
+          <p class="mt-2 text-sm leading-relaxed text-zinc-400">A decade in the trades taught me what customers actually value: reliability.</p>
         </article>
         <article class="border-t border-white/15 pt-6">
           <span class="text-xs font-semibold text-amber-300">02</span>
-          <h2 class="mt-4 font-display text-xl font-medium text-white">Make it legible</h2>
-          <p class="mt-2 text-sm leading-relaxed text-zinc-400">Good products explain themselves through use.</p>
+          <h2 class="mt-4 font-display text-xl font-medium text-white">No shortcuts</h2>
+          <p class="mt-2 text-sm leading-relaxed text-zinc-400">Every site is built solid, tested, and made to last.</p>
         </article>
         <article class="border-t border-white/15 pt-6">
           <span class="text-xs font-semibold text-amber-300">03</span>
-          <h2 class="mt-4 font-display text-xl font-medium text-white">Ship with care</h2>
-          <p class="mt-2 text-sm leading-relaxed text-zinc-400">Quality is a practice, not a final polish.</p>
+          <h2 class="mt-4 font-display text-xl font-medium text-white">Straight talk</h2>
+          <p class="mt-2 text-sm leading-relaxed text-zinc-400">Clear communication and honest pricing, no jargon.</p>
         </article>
       </div>
     </section>
