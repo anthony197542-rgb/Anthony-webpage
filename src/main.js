@@ -29,30 +29,6 @@ document.querySelector('#app').innerHTML = `
       </a>
     </section>
 
-    <section class="border-t border-white/10 py-24" id="about">
-      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300">About</p>
-      <p class="mt-6 max-w-2xl text-xl leading-relaxed text-zinc-300 sm:text-2xl">
-        After a decade as a professional plumber, I traded copper and wrenches for clean code and modern web design. The tools changed, but the core principle stayed the exact same: build solid infrastructure that doesn&rsquo;t leak, breaks down, or let the customer down.
-      </p>
-      <div class="mt-14 grid gap-10 sm:grid-cols-3">
-        <article class="border-t border-white/15 pt-6">
-          <span class="text-xs font-semibold text-amber-300">01</span>
-          <h2 class="mt-4 font-display text-xl font-medium text-white">Built on experience</h2>
-          <p class="mt-2 text-sm leading-relaxed text-zinc-400">A decade in the trades taught me what customers actually value: reliability.</p>
-        </article>
-        <article class="border-t border-white/15 pt-6">
-          <span class="text-xs font-semibold text-amber-300">02</span>
-          <h2 class="mt-4 font-display text-xl font-medium text-white">No shortcuts</h2>
-          <p class="mt-2 text-sm leading-relaxed text-zinc-400">Every site is built solid, tested, and made to last.</p>
-        </article>
-        <article class="border-t border-white/15 pt-6">
-          <span class="text-xs font-semibold text-amber-300">03</span>
-          <h2 class="mt-4 font-display text-xl font-medium text-white">Straight talk</h2>
-          <p class="mt-2 text-sm leading-relaxed text-zinc-400">Clear communication and honest pricing, no jargon.</p>
-        </article>
-      </div>
-    </section>
-
     <section class="border-t border-white/10 py-24" id="work" aria-labelledby="work-title">
       <p class="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">Selected work</p>
       <h2 id="work-title" class="mt-6 mb-12 font-display text-4xl font-medium text-white">Selected projects</h2>
@@ -75,6 +51,30 @@ document.querySelector('#app').innerHTML = `
             Explore <i aria-hidden="true" class="not-italic transition-transform group-hover:translate-x-1">↗</i>
           </span>
         </a>
+      </div>
+    </section>
+
+    <section class="border-t border-white/10 py-24" id="about">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300">About</p>
+      <p class="mt-6 max-w-2xl text-xl leading-relaxed text-zinc-300 sm:text-2xl">
+        After a decade as a professional plumber, I traded copper and wrenches for clean code and modern web design. The tools changed, but the core principle stayed the exact same: build solid infrastructure that doesn&rsquo;t leak, breaks down, or let the customer down.
+      </p>
+      <div class="mt-14 grid gap-10 sm:grid-cols-3">
+        <article class="border-t border-white/15 pt-6">
+          <span class="text-xs font-semibold text-amber-300">01</span>
+          <h2 class="mt-4 font-display text-xl font-medium text-white">Built on experience</h2>
+          <p class="mt-2 text-sm leading-relaxed text-zinc-400">A decade in the trades taught me what customers actually value: reliability.</p>
+        </article>
+        <article class="border-t border-white/15 pt-6">
+          <span class="text-xs font-semibold text-amber-300">02</span>
+          <h2 class="mt-4 font-display text-xl font-medium text-white">No shortcuts</h2>
+          <p class="mt-2 text-sm leading-relaxed text-zinc-400">Every site is built solid, tested, and made to last.</p>
+        </article>
+        <article class="border-t border-white/15 pt-6">
+          <span class="text-xs font-semibold text-amber-300">03</span>
+          <h2 class="mt-4 font-display text-xl font-medium text-white">Straight talk</h2>
+          <p class="mt-2 text-sm leading-relaxed text-zinc-400">Clear communication and honest pricing, no jargon.</p>
+        </article>
       </div>
     </section>
 
