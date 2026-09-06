@@ -44,8 +44,8 @@ document.querySelector('#app').innerHTML = `
         </a>
         <a class="group flex items-center justify-between gap-6 py-6 transition hover:bg-white/5" href="https://lead-dashboard-brown-seven.vercel.app" target="_blank" rel="noopener noreferrer">
           <div>
-            <p class="text-lg font-medium text-white">Electrical Co.</p>
-            <p class="mt-1 text-sm text-zinc-500">Electrician website / 2025</p>
+            <p class="text-lg font-medium text-white">Power Electric</p>
+            <p class="mt-1 text-sm text-zinc-500">Electrician website / (555) 555-5555</p>
           </div>
           <span class="inline-flex items-center gap-1 text-sm font-medium text-amber-300">
             Explore <i aria-hidden="true" class="not-italic transition-transform group-hover:translate-x-1">↗</i>
