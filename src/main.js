@@ -57,19 +57,19 @@ document.querySelector('#app').innerHTML = `
       <p class="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">Selected work</p>
       <h2 id="work-title" class="mt-6 mb-12 font-display text-4xl font-medium text-white">Selected projects</h2>
       <div class="divide-y divide-white/10 border-t border-b border-white/10">
-        <a class="group flex items-center justify-between gap-6 py-6 transition hover:bg-white/5" href="mailto:hello@anthony.dev?subject=Northstar%20project">
+        <a class="group flex items-center justify-between gap-6 py-6 transition hover:bg-white/5" href="https://hiddenpathwaytherapy.vercel.app" target="_blank" rel="noopener noreferrer">
           <div>
-            <p class="text-lg font-medium text-white">Northstar</p>
-            <p class="mt-1 text-sm text-zinc-500">Product platform / 2026</p>
+            <p class="text-lg font-medium text-white">Hidden Pathway Therapy</p>
+            <p class="mt-1 text-sm text-zinc-500">Therapy website / 2026</p>
           </div>
           <span class="inline-flex items-center gap-1 text-sm font-medium text-amber-300">
             Explore <i aria-hidden="true" class="not-italic transition-transform group-hover:translate-x-1">↗</i>
           </span>
         </a>
-        <a class="group flex items-center justify-between gap-6 py-6 transition hover:bg-white/5" href="mailto:hello@anthony.dev?subject=Civic%20Signal%20project">
+        <a class="group flex items-center justify-between gap-6 py-6 transition hover:bg-white/5" href="https://lead-dashboard-brown-seven.vercel.app" target="_blank" rel="noopener noreferrer">
           <div>
-            <p class="text-lg font-medium text-white">Civic Signal</p>
-            <p class="mt-1 text-sm text-zinc-500">Data infrastructure / 2025</p>
+            <p class="text-lg font-medium text-white">Knight Electric</p>
+            <p class="mt-1 text-sm text-zinc-500">Electrician website / 2025</p>
           </div>
           <span class="inline-flex items-center gap-1 text-sm font-medium text-amber-300">
             Explore <i aria-hidden="true" class="not-italic transition-transform group-hover:translate-x-1">↗</i>
